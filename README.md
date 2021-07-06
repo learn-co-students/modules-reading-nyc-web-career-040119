@@ -97,9 +97,9 @@ class Dancer
 end
 ```
 
-If we use `include` keyword, we allow our classes to use all of the methods of the included module as *instance* methods. We'll talk about how to lend a module's methods as *class* methods in a minute.
+If we use the `include` keyword, we allow our classes to use all of the methods of the included module as *instance* methods. We'll talk about how to lend a module's methods as *class* methods in a minute.
 
-Now that we've included the module, open up `bin/dance_party` and get familiar with following code:
+Now that we've included the module, open up `bin/dance_party` and get familiar with the following code:
 
 ```ruby
 require_relative "../lib/kid.rb"
@@ -121,7 +121,7 @@ Mikhail says: Thank you, thank you. It was a pleasure to dance for you all.
 
 ## Code Along II: Extending Module Methods as Class Methods
 
-In order to lend a module's methods to a class as *class methods*, we use the `extend` keyword. Let's write yet another module that we can extend into our classes as class methods. For the purposes of this example, let's create a shareable class method, `metadata`, which will report on some pertinent (shared) information regarding both classes.
+In order to lend a module's methods to a class as *class* methods, we use the `extend` keyword. Let's write yet another module that we can extend into our classes as class methods. For the purposes of this example, let's create a shareable class method, `metadata`, which will report on some pertinent (shared) information regarding both classes.
 
 Open up the `lib/class_methods_module.rb` and define the following module and methods:
 
